@@ -1,3 +1,9 @@
+@media only screen and (max-width: 600px) {
+  button {
+      width: 100%;
+  }
+}
+
 html, body, #st-full-pg {
   margin: 0;
 }
