@@ -13,7 +13,7 @@ html,body, #st-full-pg {
 }
 
 body {
-  height: 2000px; /* Used to enable scrolling */
+  //height: 2000px; /* Used to enable scrolling */
   font-family: $openSans;
   background-color: black;
   //background-color: rgb(252,218,17); /* For browsers that do not support gradients */
@@ -21,9 +21,16 @@ body {
   //background: linear-gradient(rgba(255,253,85,1) 0%, rgba(250,173,0,1) 100%);
 }
 
-#logo{
+#logo {
   width: 20%;
 }
+
+@media (min-width: 481px) and (max-width: 992px) {
+  #logo {
+    width: 40%;
+  }
+}
+
 // Buttons
 
 $fuschia: #ff0081;

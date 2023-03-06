@@ -3,7 +3,6 @@ html, body, #st-full-pg {
 }
 
 body {
-  height: 2000px; /* Used to enable scrolling */
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   background-color: black;
   width: 100%;
@@ -13,6 +12,11 @@ body {
   width: 20%;
 }
 
+@media (min-width: 481px) and (max-width: 992px) {
+  #logo {
+    width: 40%;
+  }
+}
 .bubbly-button {
   font-family: "Helvetica", "Arial", sans-serif;
   font-size: 1em;
