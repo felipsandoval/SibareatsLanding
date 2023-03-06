@@ -8,21 +8,42 @@ $grid-breakpoints: (
   xxl: 1400px
 );
 
-html,body, #st-full-pg {
-  margin: 0;
+body {
+  //height: 100%; /* Used to enable scrolling */
+  font-family: $openSans;
+  color: white;
+  background-color: #eecf00; /* For browsers that do not support gradients */
+  //width: 100%;
+  background: linear-gradient(rgba(252,93,81,1) 0%, rgba(238,128,120,1) 64%, rgba(253,193,189,1) 100%);
 }
 
-body {
-  //height: 2000px; /* Used to enable scrolling */
-  font-family: $openSans;
-  background-color: black;
-  //background-color: rgb(252,218,17); /* For browsers that do not support gradients */
-  width: 100%;
-  //background: linear-gradient(rgba(255,253,85,1) 0%, rgba(250,173,0,1) 100%);
+/* This rule ensures that the background gradient covers the entire viewport */
+html, body {
+  height: 100%;
+}
+
+a{
+  font-size:1rem;
+  font-family: "Arial";
+  letter-spacing: -0.4px;
+  word-spacing: 0.6px;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
+}
+
+/* This rule ensures that elements inside the body fill the entire viewport */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #logo {
   width: 20%;
+  cursor: pointer;
 }
 
 @media (min-width: 0) and (max-width: 992px) {
@@ -32,118 +53,6 @@ body {
 }
 
 // Buttons
-
-$fuschia: #ff0081;
-$button-bg: $fuschia;
-$button-text-color: #fff;
-$baby-blue: #f8faff;
-
-.bubbly-button{
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  font-size: 1em;
-  padding: 1em 2em;
-  margin-bottom: 20px;
-  -webkit-appearance: none;
-  appearance: none;
-  background-color: $button-bg;
-  color: $button-text-color;
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
-  
-  &:focus {
-    outline: 0;
-  }
-  
-  &:before, &:after{
-    position: absolute;
-    content: '';
-    display: block;
-    width: 140%;
-    height: 100%;
-    left: -20%;
-    z-index: -1000;
-    transition: all ease-in-out 0.5s;
-    background-repeat: no-repeat;
-  }
-  
-  &:before{
-    display: none;
-    top: -75%;
-    background-image:  
-      radial-gradient(circle, $button-bg 20%, transparent 20%),
-    radial-gradient(circle,  transparent 20%, $button-bg 20%, transparent 30%),
-    radial-gradient(circle, $button-bg 20%, transparent 20%), 
-    radial-gradient(circle, $button-bg 20%, transparent 20%),
-    radial-gradient(circle,  transparent 10%, $button-bg 15%, transparent 20%),
-    radial-gradient(circle, $button-bg 20%, transparent 20%),
-    radial-gradient(circle, $button-bg 20%, transparent 20%),
-    radial-gradient(circle, $button-bg 20%, transparent 20%),
-    radial-gradient(circle, $button-bg 20%, transparent 20%);
-  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
-  //background-position: 0% 80%, -5% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 85% 30%;
-  }
-  
-  &:after{
-    display: none;
-    bottom: -75%;
-    background-image:  
-    radial-gradient(circle, $button-bg 20%, transparent 20%), 
-    radial-gradient(circle, $button-bg 20%, transparent 20%),
-    radial-gradient(circle,  transparent 10%, $button-bg 15%, transparent 20%),
-    radial-gradient(circle, $button-bg 20%, transparent 20%),
-    radial-gradient(circle, $button-bg 20%, transparent 20%),
-    radial-gradient(circle, $button-bg 20%, transparent 20%),
-    radial-gradient(circle, $button-bg 20%, transparent 20%);
-  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
-  //background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-  }
- 
-  &:active{
-    transform: scale(0.9);
-    background-color: darken($button-bg, 5%);
-    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
-  }
-  
-  &.animate{
-    &:before{
-      display: block;
-      animation: topBubbles ease-in-out 0.75s forwards;
-    }
-    &:after{
-      display: block;
-      animation: bottomBubbles ease-in-out 0.75s forwards;
-    }
-  }
-}
-
-
-@keyframes topBubbles {
-  0%{
-    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
-  }
-    50% {
-      background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;}
- 100% {
-    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
-  background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
-  }
-}
-
-@keyframes bottomBubbles {
-  0%{
-    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
-  }
-  50% {
-    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;}
- 100% {
-    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
-  background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%;
-  }
-}
-
 
 // Animate the size, inside
 .fill:hover,
@@ -207,13 +116,13 @@ $baby-blue: #f8faff;
 // If you wonder why use Sass vars or CSS custom properties...
   // Make a map with the class names and matching colors
 $colors: (
-  fill: #a972cb,
-  pulse: #ef6eae, 
-  close: #ff7f82, 
-  raise: #ffa260, 
-  up: #e4cb58, 
-  slide: #8fc866, 
-  offset: #19bc8b
+  fill: #eecf00,
+  pulse: #eecf00, 
+  close: #eecf00, 
+  raise: #eecf00, 
+  up: #eecf00, 
+  slide: #eecf00, 
+  offset: #eecf00
 );
 
 // Sass variables compile to a static string; CSS variables are dynamic and inherited
@@ -221,7 +130,7 @@ $colors: (
 @each $button, $color in $colors {
   .#{$button} {
     --color: #{$color};
-    --hover: #{adjust-hue($color, 45deg)};
+    --hover: #{adjust-hue($color, 10deg)};
   }
 }
 
@@ -233,7 +142,7 @@ button {
   &:hover,
   &:focus { 
     border-color: var(--hover);
-    color: #fff;
+    color: black;
   }
 }
 
@@ -247,11 +156,16 @@ button {
   font-size: 1em;
   margin-bottom: 20px;
   -webkit-appearance: none;
-  background-color: rgb(240, 210, 41);
-  color: black;
+  background-color: #ec3123;
+  color: white;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: uppercase;
   //box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
 }
 

@@ -12,6 +12,10 @@ function animateButton(e) {
   },700);
 };
 
+function OpenIG(){
+    window.open("https://www.instagram.com/lossibareats/")
+}
+
 function OpenRouteSanchi(){
     window.open("https://goo.gl/maps/uSz94Q75HmPL1mwu6")
 }
