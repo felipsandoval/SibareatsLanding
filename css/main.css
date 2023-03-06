@@ -5,9 +5,12 @@ html, body, #st-full-pg {
 body {
   height: 2000px; /* Used to enable scrolling */
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background-color: rgb(252, 218, 17); /* For browsers that do not support gradients */
+  background-color: black;
   width: 100%;
-  background: linear-gradient(rgb(255, 253, 85) 0%, rgb(250, 173, 0) 100%);
+}
+
+#logo {
+  width: 20%;
 }
 
 .bubbly-button {
