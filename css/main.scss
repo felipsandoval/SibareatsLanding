@@ -116,13 +116,13 @@ a{
 // If you wonder why use Sass vars or CSS custom properties...
   // Make a map with the class names and matching colors
 $colors: (
-  fill: #eecf00,
-  pulse: #eecf00, 
-  close: #eecf00, 
-  raise: #eecf00, 
-  up: #eecf00, 
-  slide: #eecf00, 
-  offset: #eecf00
+  fill: #7e0800,
+  pulse: #7e0800, 
+  close: #7e0800, 
+  raise: #7e0800, 
+  up: #7e0800, 
+  slide: #7e0800, 
+  offset: #7e0800
 );
 
 // Sass variables compile to a static string; CSS variables are dynamic and inherited
@@ -142,7 +142,7 @@ button {
   &:hover,
   &:focus { 
     border-color: var(--hover);
-    color: black;
+    color: #ec3123;
   }
 }
 

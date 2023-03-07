@@ -84,38 +84,38 @@ a {
 }
 
 .fill {
-  --color: #eecf00;
-  --hover: #e5ee00;
+  --color: #7e0800;
+  --hover: #7e1d00;
 }
 
 .pulse {
-  --color: #eecf00;
-  --hover: #e5ee00;
+  --color: #7e0800;
+  --hover: #7e1d00;
 }
 
 .close {
-  --color: #eecf00;
-  --hover: #e5ee00;
+  --color: #7e0800;
+  --hover: #7e1d00;
 }
 
 .raise {
-  --color: #eecf00;
-  --hover: #e5ee00;
+  --color: #7e0800;
+  --hover: #7e1d00;
 }
 
 .up {
-  --color: #eecf00;
-  --hover: #e5ee00;
+  --color: #7e0800;
+  --hover: #7e1d00;
 }
 
 .slide {
-  --color: #eecf00;
-  --hover: #e5ee00;
+  --color: #7e0800;
+  --hover: #7e1d00;
 }
 
 .offset {
-  --color: #eecf00;
-  --hover: #e5ee00;
+  --color: #7e0800;
+  --hover: #7e1d00;
 }
 
 button {
@@ -124,7 +124,7 @@ button {
 }
 button:hover, button:focus {
   border-color: var(--hover);
-  color: black;
+  color: #ec3123;
 }
 
 button {

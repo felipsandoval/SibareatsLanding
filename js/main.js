@@ -19,3 +19,15 @@ function OpenIG(){
 function OpenRouteSanchi(){
     window.open("https://goo.gl/maps/uSz94Q75HmPL1mwu6")
 }
+
+function OpenRouteCentro(){
+    window.open("https://goo.gl/maps/WRkwbqnAxPX91wnY7")
+}
+
+function OpenRouteChamberi(){
+    window.open("https://goo.gl/maps/hcMNmqnHJQ2cbnkC7")
+}
+
+function OpenRouteChamberi(){
+    window.open("https://goo.gl/maps/g2XKXaAxvz9ahWW27")
+}
