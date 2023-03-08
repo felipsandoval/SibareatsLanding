@@ -1,3 +1,4 @@
+<!--done x Felipe Sandoval-->
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -16,35 +17,56 @@
 		    <title> Rutas Los Sibareats en Google Maps </title>
 	</head>
 	<body>
-    <br></br>
-    <div class="container text-center">
-      <div class="row">
-        <div class="col">
-          <img src="img/lossibareats.png" id="logo" class="img-fluid rounded mx-auto-d-block" alt="Los Sibareats Logo" onclick="OpenIG()">
-        </div>
-      </div>
-      <br></br>
-      <div class="row">
-        <div class="col">
-          <a id="content"> ¡Añade nuestros restaurantes favoritos a tu calendario de google maps!&#x1F4CD; </a><br>
-          <a id="content"> Así podrás disfrutarlos cuándo quieras </a>
-          <br></br>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col"><button class="up" onclick= "OpenRouteCentro()">Madrid Centro</button></div>
-      </div>
-      <div class="row">
-        <div class="col"><button class="up" onclick= "OpenRouteSanchi()">Sanchinarro / Las Tablas</button></div>
-      </div>
-      <div class="row">
-        <div class="col"><button class="up" onclick= "OpenRouteChamberi()">Chamberí</button></div>
-      </div>
-      <div class="row">
-        <div class="col"><button class="up" onclick= "OpenRouteChamberi()">Mirasierra</button></div>
-      </div>
+
+    <!--Header-->
+    <div class="container d-flex justify-content-center my-3">
+      <img src="img/lossibareats.png" id="logo" class="img-fluid rounded mx-auto-d-block" alt="Los Sibareats Logo" onclick="OpenIG()">
     </div>
 
+    <div class="container">
+      <p class="lead text-center">¡Añade nuestros restaurantes favoritos a tu calendario de google maps!&#x1F4CD; <br>Así podrás disfrutarlos cuándo quieras </a></p>
+		</div>
+
+    <!--Botones-->
+    <div class="container my-1">
+      <div class="row my-2 justify-content-center">
+        <div class="col-sm-4 cold-md-6 col-lg-3">
+          <div class="text-center">
+            <a href="https://goo.gl/maps/WRkwbqnAxPX91wnY7" target="_blank" class="btn btn-info btn-sib my-1"> Madrid Centro</a>
+          </div>
+        </div>
+      </div>
+      <div class="row my-2 justify-content-center">
+        <div class="col-sm-4 cold-md-6 col-lg-4">
+          <div class="text-center"> 
+            <a href="https://goo.gl/maps/uSz94Q75HmPL1mwu6" target="_blank" class="btn btn-info btn-sib my-1"> Sanchinarro / Las Tablas</a>
+          </div>
+        </div>
+      </div>
+      <div class="row my-2 justify-content-center">
+        <div class="col-sm-4 cold-md-6 col-lg-4">
+          <div class="text-center"> 
+            <a href="https://goo.gl/maps/hcMNmqnHJQ2cbnkC7" target="_blank" class="btn btn-info btn-sib my-1"> Chamberí</a>
+          </div>
+        </div>
+      </div>	
+      <div class="row my-2 justify-content-center">
+        <div class="col-sm-4 cold-md-6 col-lg-4">
+          <div class="text-center"> 
+            <a href="https://goo.gl/maps/g2XKXaAxvz9ahWW27" target="_blank" class="btn btn-info btn-sib my-1"> Mirasierra</a>
+          </div>
+        </div>
+      </div>	
+    </div>
+
+  <!--Footer-->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="p-3 text-center">  © Los Sibareats 2023 </div>
+      </div>
+    </div>	
+  </div>
   <script src="js/main.js"></script>
 	</body>
 </html>
