@@ -2,7 +2,7 @@ body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   color: black;
   background-color: #eecf00; /* For browsers that do not support gradients */
-  background: linear-gradient(0deg, rgb(232, 215, 28) 0%, rgb(230, 217, 74) 64%, rgb(227, 218, 116) 100%);
+  background: linear-gradient(0deg, rgb(227, 218, 116) 0%, rgb(230, 216, 60) 90%, rgb(232, 215, 28) 100%);
 }
 
 /* This rule ensures that the background gradient covers the entire viewport */
