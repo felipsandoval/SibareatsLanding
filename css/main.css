@@ -15,12 +15,12 @@ html, body {
   cursor: pointer;
 }
 
-@media (min-width: 0) and (max-width: 776px) {
+@media (min-width: 0) and (max-width: 768px) {
   #logo {
     width: 70%;
   }
 }
-.btn-sib {
+.btn-sib2 {
   font-family: "Helvetica", "Arial", sans-serif;
   border: 2px solid;
   line-height: 1;
@@ -40,13 +40,33 @@ html, body {
   text-transform: uppercase;
 }
 
-h1 {
-  font-weight: 400;
+.btn-sib {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  -webkit-appearance: none;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #023285;
+  border-radius: 4px;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .btn-sib {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
-code {
-  color: #e4cb58;
-  font: inherit;
+@media only screen and (max-width: 480px) {
+  p {
+    font-size: 10px;
+    line-height: 1.4;
+    padding: 10px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
